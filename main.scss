@@ -1,0 +1,17 @@
+body { margin-top: 100px; font: 14px Tahoma; color: grey; }
+
+$primary: #00C6D6;
+
+.accordion { width: 400px; list-style: none; border: 1px solid darken($primary, 7%); border-top: 0; padding: 0; margin: auto; }
+.accordion * { margin: 0; }
+.accordion h4 { cursor: pointer; color: white;
+    padding-left: 15px;
+    background: $primary;
+    border-top: 1px solid darken($primary, 7%);
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px; font-weight: normal;
+    transition: background .75s ease; }
+.accordion h4:hover { background: lighten($primary, 5%); }
+.accordion p { overflow: auto; height: 0; transition: all 1.5s ease-out; }
+.accordion .active p { padding: 20px; height: 150px; }
